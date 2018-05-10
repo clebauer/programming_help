@@ -31,6 +31,25 @@ def generate_body_part(num):
     side_post = ''.join(side_list)
     return side_post
     
+# FROM OTHER FILE
+# def generate_body_part(num):
+#     side_post = ' |   ! '
+#     parts = [' O', ' |', '/|\\', ' |', '/ \\']
+#     part_list = list(side_post)
+#     part_list[5] = parts[num]
+#     body_part = ''.join(part_list)
+#     return body_part
+
+# def print_hangman(pts):
+#     top_post = '_______'
+#     first_post = ' |    !'
+#     bottom_post = '_|_____'
+#     whole_enchilada = [top_post, first_post, bottom_post]
+#     for i in range(pts):
+#         whole_enchilada.insert(len(whole_enchilada)-1, generate_body_part(i))
+#     
+#     for x in whole_enchilada:
+#         print x
 
 def print_hangman(pts, wrong_letters):
     top_post = "______"
